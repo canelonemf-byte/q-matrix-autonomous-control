@@ -1,43 +1,44 @@
 # q-matrix-autonomous-control
 
-Q-MATRIX: materiales cuánticos con ajuste autónomo, aprendizaje por refuerzo y experimentación inteligente.
+# q-matrix-autonomous-control  Q-MATRIX: materiales cuánticos con ajuste autónomo, aprendizaje por refuerzo y experimentación inteligente.  **Autor:** Lázaro López Paz · **Licencia:** MIT (ver `LICENSE`)
 
-**Autor:** Lázaro López Paz · **Licencia:** MIT (ver `LICENSE`)
+## Autoría
 
-## Carpetas de origen en Google Drive
+- **Autor:** Lázaro López Paz, El Prat de Llobregat, Barcelona, España
+- **ORCID:** [0000-0001-8601-1963](https://orcid.org/0000-0001-8601-1963)
+- Elaborado con asistencia de inteligencia artificial
+- Sin afiliaciones institucionales
 
-- https://drive.google.com/drive/folders/1ryx9MUaAws-g5KqwyhmmMvUW_8-vvA7q
+## Estado
 
-## Archivos incluidos
+Proyecto en desarrollo / documentación. No afirmar validación experimental salvo que el código o los informes del propio repositorio lo demuestren.
 
-- `docs/Q_MATRIX__Quantum_Materials_with_Autonomous_Tuning_Reinforcement_learning___Intelligent_eXperimentation.md` ← Q_MATRIX__Quantum_Materials_with_Autonomous_Tuning_Reinforcement_learning___Intelligent_eXperimentation.pdf
+## Contenido (raíz)
 
-## Pendiente: en Drive
+```
+docs/
+LICENSE
+README.md
+REFERENCIAS.md
+requirements.txt
+tests/
+vb_spin/
+```
 
-Archivos binarios (presentaciones, PDFs grandes, vídeos, imágenes, zips, docx) que no se pudieron pasar a texto. Siguen en Drive:
+## Instalación
 
-- Plataforma_Q-MATRIX.mp4 · pendiente: en Drive · https://drive.google.com/file/d/1gWs2zU43KBdsyDjq7iREv7TNpodRuiVN/view?usp=drivesdk
-- Q-MATRIX_Autonomous_Control ingles.png · pendiente: en Drive · https://drive.google.com/file/d/1_0LlgWqItmG8YJ7Kgp-lfxh5ZXM7Xw8z/view?usp=drivesdk
-- Q-MATRIX_Autonomous_Control.pdf · pendiente: en Drive · https://drive.google.com/file/d/1frJfjgl9iawGFnD9jKN7BOhPKUQMeYcS/view?usp=drivesdk
-- Q-MATRIX_Autonomous_Control.png · pendiente: en Drive · https://drive.google.com/file/d/1R17YZtLrw0Gm7As3Ci9aggY4s7G2NIsH/view?usp=drivesdk
-- Q-MATRIX_Autonomous_Control.pptx · pendiente: en Drive · https://docs.google.com/presentation/d/1Qu4tLj-_j1EDp3b7flBha8oTsRWHeF6b/edit?usp=drivesdk&ouid=104725215047766891127&rtpof=true&sd=true
-- Q-MATRIX_Autonomous_Quantum_Systems.pdf · pendiente: en Drive · https://drive.google.com/file/d/16VvnN244MaFqUTH1VT4wKLuvygZMP0nf/view?usp=drivesdk
-- Q-MATRIX_Autonomous_Quantum_Systems.pptx · pendiente: en Drive · https://docs.google.com/presentation/d/1lBndCvmg0V4gX9T1ttFv_ocmRFd33Nhu/edit?usp=drivesdk&ouid=104725215047766891127&rtpof=true&sd=true
-- Q-MATRIX__Autonomous_Tuning.mp4 · pendiente: en Drive · https://drive.google.com/file/d/1etCFF-WzutZtKZvHdEfBpWNTRJpaaNh4/view?usp=drivesdk
-- actualizado a dia 24-06-2026.zip · pendiente: en Drive · https://drive.google.com/file/d/1qOXaDAAzPgAWM9gf-wZymhuSsQeZpD7Z/view?usp=drivesdk
+```bash
+pip install -r requirements.txt
+```
 
-### Subcarpetas no importadas (pendiente: en Drive)
 
-- actualizado a dia 24-06-2026 · https://drive.google.com/drive/folders/1M0uGs71kGYGm0go7BMuo85jG17x7C5Go
+## Uso
 
----
-Los archivos `.trashed-*`, las copias («- copia») y los duplicados entre carpetas no se han listado.
+Archivos Python principales (revisar cada uno antes de ejecutar):
+- `tests/test_vb_spin.py`
+- `vb_spin/__init__.py`
 
-## Referencias
-Ver [REFERENCIAS.md](REFERENCIAS.md).
 
-## Código ejecutable (vb_spin)
+## Licencia
 
-`pip install -r requirements.txt && python -m pytest -q`
-
-Hamiltoniano S=1 de V_B⁻ con los parámetros del autor (D=3,47 GHz, E=60 MHz): da las líneas ODMR D±E y la pendiente Zeeman. Es un modelo del sensor, no una medida (E1).
+Ver archivo `LICENSE` (o `LICENSE.md`) en la raíz. Documentación bajo CC BY 4.0 cuando aplique; código habitualmente MIT, salvo indicación contraria.
